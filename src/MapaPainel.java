@@ -19,13 +19,12 @@ public class MapaPainel extends JPanel {
 
         if (mapa == null) return;
 
-        int cellSize = 30; // Tamanho de cada célula
+        int cellSize = 30;
 
         for (int i = 0; i < mapa.length; i++) {
             for (int j = 0; j < mapa[i].length; j++) {
                 char c = mapa[i][j];
 
-                // Escolhe uma cor com base no caractere
                 switch (c) {
                     case '*':
                         g.setColor(Color.RED);
